@@ -8,6 +8,21 @@
 2. Install the Active Directory Windows Feature
 
 ```shell
-Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+Install-WindowsFeature AD-Domain-Services 
+-IncludeManagementTools
 ```
+
+```
+Get-NetIPAddress
+```
+
+# Joining the Workstation to the domain
+
+
+
+```
+Add-Computer -Domainname tabomm.com -Credential tabomm\Administrator
+-Force -Restart
+```
+
 
